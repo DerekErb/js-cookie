@@ -42,7 +42,7 @@ var Cookie = {
      *
      * @param strName   Name of cookie
      * @param strVal    Value (to be stored) of cookie
-     * @param iDays     Expiration datetime in number of day
+     * @param fDays     Expiration datetime in number of day
      *                  (Default: 1 day)
      * @param strPath   Path from which the cookie can be stored/read
      *                  (Default: root /)
@@ -52,9 +52,9 @@ var Cookie = {
      *                  (Default: false)
      /************************************************************************/
 
-    set : function(strName, strVal, iDays=1, strPath='/', bSec = false) {
+    set : function(strName, strVal, fDays=1, strPath='/', bSec = false) {
         let dt = new Date();
-        let strExp = 'expires=' + dt.toUTCString(dt.setTime(dt.getTime() + (86400 * 1000 *  iDays)));
+        let strExp = 'expires=' + dt.toUTCString(dt.setTime(dt.getTime() + (86400 * 1000 *  fDays)));
         let strSec = (bSec ? ' secure' : '');
         document.cookie = encodeURIComponent(strName) + '=' + encodeURIComponent(strVal) + ';' + strExp + ';path=' + strPath + strSec;
     },
