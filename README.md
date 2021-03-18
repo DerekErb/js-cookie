@@ -59,7 +59,7 @@ Create a cookie that expires in 5 days and is valid from your /js folder and sub
 
 ### Read Cookies
 
-Read cookie:
+Read a cookie:
 
 ```javascript
   Cookie.get('cookiename')  // => cookie's value
@@ -67,6 +67,8 @@ Read cookie:
 ```
 
 ### Deleting Cookies
+
+Delete a cookie:
 
 ```javascript
   Cookie.del('cookiename')
