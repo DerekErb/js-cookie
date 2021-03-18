@@ -29,7 +29,7 @@ Value of the cookie to be set
 The number of days before expiring the cookie. From now.<br>
 __Default:__ 1 day
 
-* __strPath_<br>
+* __strPath__<br>
 The path from where the cookie is valid, starting from the root.<br>
 __Default:__ root /
 
