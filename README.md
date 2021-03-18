@@ -6,7 +6,10 @@ A tiny JavaScript script for managing browser Cookies.
 
 ### Direct download
 
-Download the source file and include in your HTML file(s).
+Download the source file and include in your HTML file(s):
+
+- [js-cookie-min.js (with explanatory comments)](js-cookie-min.js)
+- [js-cookie.js (without explanatory comments)](js-cookie.js)
 
 ## Basic Usage
 
